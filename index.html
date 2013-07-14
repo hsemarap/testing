@@ -1,0 +1,45 @@
+<html>
+<head><title>Automaton</title></head>
+<script src='jquery.js' type='text/javascript'></script>
+<script src='pda.js' type='text/javascript'></script>
+<style>
+#stack{
+height:90%;
+width:40%;
+float:right;
+border:1px solid gray;
+}
+#rules{
+width:50%;
+height:30%;
+}
+.red{background-color:rgba(156,9,9,.5);}
+.green{background-color:rgba(9,156,9,.5);}
+.blue{background-color:rgba(9,9,256,.6);}
+.yellow{background-color:rgba(156,156,9,.5);}
+.plate{
+height:3%;
+width:30%;
+margin:auto;
+position:relative;
+border-radius:20px;
+border-top-left-radius:0px;border-top-right-radius:0px;
+}
+</style>
+<body>
+<h1>PDA</h1>
+<div id='stack'>
+<div class='yellow plate'></div>
+<div class='blue plate'></div>
+<div class='green plate'></div>
+<div class='red plate'></div>
+</div>
+<h4>State : <span id='state'></span></h4>
+<button class='plus' data-color='red'>+ Red</button><button class='minus' data-color='red'>- Red</button>
+<button class='plus' data-color='blue'>+ Blue</button><button class='minus' data-color='blue'>- Blue</button>
+<button class='plus' data-color='green'>+ Green</button><button class='minus' data-color='green'>- Green</button>
+<h3>Enter The Rules For the PDA</h3>
+<textarea id='rules'>
+</textarea>
+</body>
+</html>
