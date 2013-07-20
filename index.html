@@ -29,17 +29,20 @@ border-top-left-radius:0px;border-top-right-radius:0px;
 <body>
 <h1>PDA</h1>
 <div id='stack'>
-<div class='yellow plate'></div>
-<div class='blue plate'></div>
-<div class='green plate'></div>
 <div class='red plate'></div>
 </div>
 <h4>State : <span id='state'></span></h4>
+<button class='plus' data-color='yellow'>+ Yellow</button><button class='minus' data-color='yellow'>- Yellow</button>
 <button class='plus' data-color='red'>+ Red</button><button class='minus' data-color='red'>- Red</button>
 <button class='plus' data-color='blue'>+ Blue</button><button class='minus' data-color='blue'>- Blue</button>
 <button class='plus' data-color='green'>+ Green</button><button class='minus' data-color='green'>- Green</button>
-<h3>Enter The Rules For the PDA</h3>
+<h3>Enter The Rules For the PDA</h3>(enter one rule per line)
+format => State ,	Top , Input , +/- R/G/B/Y , State2
 <textarea id='rules'>
+0 , R , 1 , + , G , 1
 </textarea>
+<h3>Enter The String</h3>
+<input type='text' style='width:50%;height:40px' id='string' />
+<input type='button'  id='compute' value='compute' />
 </body>
 </html>
